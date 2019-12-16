@@ -10,7 +10,14 @@ namespace certificacao_csharp_roteiro.antes
     {
         public void Executar()
         {
-            int numero = 57;
+            int number = 57;
+            object box = number;
+            Console.WriteLine(string.Concat("Resposta", number, true));
+            try
+            {
+                int unboxed = (int)box;
+            }
+            catch (Exception) {}
         }
     }
 }
