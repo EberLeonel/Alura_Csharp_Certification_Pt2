@@ -11,6 +11,12 @@ namespace certificacao_csharp_roteiro
     {
         public void Executar()
         {
+            String vText = "R$ 13,45";
+
+            decimal.TryParse(vText,
+                System.Globalization.NumberStyles.Currency,
+                System.Globalization.CultureInfo.CurrentCulture,
+                out decimal vConverted);
         }
     }
 }
