@@ -11,7 +11,7 @@ namespace certificacao_csharp_roteiro
     {
         public void Executar()
         {
-            Type excelType = Type.GetTypeFromProgID("Excel.Application"
+            Type excelType = Type.GetTypeFromProgID("Excel.Application"  //Dynamic é o jeito de utilizar objetos de tecnologias COM
                 , true);
             dynamic excel = Activator.CreateInstance(excelType);
 
